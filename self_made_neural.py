@@ -130,33 +130,3 @@ class neural_network:
                   except:
                         pass
                   print(f"Epoch: {y+1}/{epochs} Error: {self.cost(self.errors[-1])}")
-
-#train_input = np.array([[1,0,1,0],[1,0,1,1],[0,1,0,1],[1,1,1,1],[0,0,0,0]])
-#train_output = np.transpose(np.array([[1,1,0,1,0],[0,0,0,1,0]]))
-#test_input = np.array([[1,0,1,0]])
-#test_output = np.transpose(np.array([[1],[0]]))
-#
-#layer_size = [4,3,2,2]
-#p = neural_network(layer_size)
-#
-#p.driver(train_input, train_output)
-#output = p.predict(test_input)
-#test_error = p.test_error(test_output)
-#print(test_output)
-#print(output)
-
-
-#weights = [np.array([[0.01327811, 0.51412677, 0.93262954],
-#        [0.63523674, 0.07992086, 0.01736184],
-#        [0.28418087, 0.53905913, 0.62494815],
-#        [0.58456207, 0.10631604, 0.44391496]]),
-# np.array([[0.38473136, 0.71279532],
-#        [0.11370674, 0.9211886 ],
-#        [0.66738183, 0.91736131]]),
-# np.array([[0.16340906],
-#        [0.36996331]])]
-#      
-#baises = [np.array([[0.81515243, 0.00297802, 0.16462236]]),
-# np.array([[0.18499044, 0.64721678]]),
-# np.array([[0.10075949]])]
-#      
